@@ -6,15 +6,15 @@ dias_semana = ["Lunes", "Martes", "Miercoles", "Jueves", "Vienres", "Sábado", "
 
 # definción de funciones
 
-def agregar_temepraturas(lista, dias):
-    for dia in dias:
+def agregar_temepraturas(lista, dias): # con esta función te permite agregar las temperaturas por cada día de la semana
+    for dia in dias: # se crea un for para enlazarlo con los días de la semana y a través de ello va agregando las temepraturas que ingrese el usuario a la listas vacía creada
         temperatura = float(input(f"Ingrese la temperatura del {dia} es: "))
         lista.append(temperatura)
 
 def calculo_temperatura(lista_temepraturas):
     suma = 0
     n=0
-    for temperatura in lista_temepraturas:
+    for temperatura in lista_temepraturas: # se crea un for para el cálculo de las funciones, primero recorre todas las temepraturas y las divide para el número total de temperaturas
        
         suma += temperatura
         n+=1
